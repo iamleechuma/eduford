@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zxx">
 <head>
     <meta charset="UTF-8">
@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World's Biggest University</title>
     <link rel="stylesheet" href="style.css">
+    <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <!--FONT AWESOME ICONS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="hero">
+    <!--HEADER-->
+    <section class="header">
         <nav>
             <a href="index.html"><img  class="logo" src="images/logo.png" alt="EDUFORD Logo"></a>
-            <div class="nav-links">
-                <i class="fa-solid fa-xmark"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">home</a></li>
                     <li><a href="#">about</a></li>
@@ -24,16 +27,17 @@
                     <li><a href="#">blog</a></li>
                     <li><a href="#">contact</a></li>
                 </ul>
-                <i class="fa-solid fa-bars"></i>
             </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
-        <div class="main">
-            <h1>World's Biggest University</h1><br>
-            <p>Lorem ipsum dolor sit amet. Et necessitatibus ipsa sit quaerat <br> tenetur est omnis ipsum aut corrupti saepe et facilis <br> provident vel laboriosam similique qui fugit suscipit.</p><br>
-            <button class="btn_1" type="button">Apply</button>
+        <div class="hero">
+            <h1>World's Biggest University</h1><br>  
+            <p>Lorem ipsum dolor sit amet. Et necessitatibus ipsa sit quaerat tenetur est omnis ipsum aut corrupti <br> saepe et facilis provident vel laboriosam similique qui fugit suscipit.</p><br>
+            <a href="" class="btn_1" >Apply</a> 
         </div>
-    </div>
-    <div class="courses">
+    </section>
+    <!--COURSES-->
+    <section class="courses">
         <h2>Courses We Offer</h2>
         <p>Lorem ipsum dolor sit amet. Et necessitatibus ipsa sit quaerat</p>
         <div class="level">
@@ -50,7 +54,7 @@
                 <p class="back">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis tempus dolor, a laoreet ex. Quisque volutpat, enim in dapibus ultrices, neque neque porta massa, non posuere tortor nulla ut dui.</p>
             </div>
         </div>
-    </div> 
+    </section> 
     <div class="campus">
         <h2>Our Global Campus</h2>
         <p>Lorem ipsum dolor sit amet. Et necessitatibus ipsa sit quaerat</p>
@@ -64,21 +68,21 @@
         <h2>Our Facilities</h2>
         <p>Lorem ipsum dolor sit amet. Et necessitatibus ipsa sit quaerat</p>
         <div class="lorem">
-        <div class="facility">
-            <img src="images/library.png" alt="Library">
-            <h3>World Class Library</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Curabitur quis tempus <br> dolor, a laoreet ex. </p>
-        </div>
-        <div class="facility">
-            <img src="images/basketball.png" alt="Playground">
-            <h3>Largest Play Ground</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Curabitur quis tempus <br> dolor, a laoreet ex. </p>
-        </div>
-        <div class="facility">
-            <img src="images/cafeteria.png" alt="Cafeteria">
-            <h3>Tasty and Healthy Food</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Curabitur quis tempus <br> dolor, a laoreet ex. </p>
-        </div>
+            <div class="facility">
+                <img src="images/library.png" alt="Library">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Curabitur quis tempus <br> dolor, a laoreet ex. </p>
+            </div>
+            <div class="facility">
+                <img src="images/basketball.png" alt="Playground">
+                <h3>Largest Play Ground</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Curabitur quis tempus <br> dolor, a laoreet ex. </p>
+            </div>
+            <div class="facility">
+                <img src="images/cafeteria.png" alt="Cafeteria">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Curabitur quis tempus <br> dolor, a laoreet ex. </p>
+            </div>
         </div>
     </div>
     <div class="reviews">
@@ -100,19 +104,30 @@
         </div>
     </div> 
     <div class="contact-us">
-        <h2>Enroll For Our Various Online Courses <br> Anywhere In The World</h2><br>
+        <h2>Enroll For Our Various Online Courses Anywhere In The World</h2><br>
         <button type="button" >contact-us</button>
     </div> 
     <footer>
         <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis tempus dolor, a laoreet ex. <br> Quisque volutpat, enim in  dapibus ultrices, neque neque porta massa, non posuere tortor nulla ut dui.</p>
+        <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis tempus dolor, a laoreet ex. Quisque volutpat, enim in  dapibus ultrices, neque neque porta massa, non posuere tortor nulla ut dui.</p>
         <div class="social-icons">
             <a href="www.facebook.co/eduford"><img src="images/facebook.png" alt="facebook"></a>
             <a href="www.twitter.com/eduford"><img src="images/twitter.png" alt="Twiiter"></a>
             <a href="www.instagram.com/eduford"><img src="images/instagram.png" alt="Instagram"></a>
             <a href="www.linkedin.com/eduford"><img src="images/linkedin.png" alt="LinkedIn"></a>
         </div>
-        <span>©</span><label>Lee Chuma 2023</label>
-    </footer>   
+        <span>© </span><label>Lee Chuma 2023</label>
+    </footer>
+    <!--JAVASCRIPT FOR TOGGLE MENU-->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+        
+    </script>   
 </body> 
 </html>
